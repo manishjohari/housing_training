@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  web:
+    build: .
+    container_name: housing_rails_demo
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/home/app
+    tty: true
